@@ -5,7 +5,7 @@
 ** Login   <lauren_d@etna-alternance.net>
 ** 
 ** Started on  Fri Apr  8 13:42:19 2016 LAURENCEAU Dorian
-** Last update Fri Apr  8 14:33:08 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 14:36:26 2016 LAURENCEAU Dorian
 */
 #include "my_printf.h"
 
@@ -33,7 +33,7 @@ int    my_printf(char *str, ...)
 int     search1(void (**opt)(), char *str, va_list ap)
 {
   int i;
-  
+
   i = 0;
   while (str[i] != '\0')
     {
@@ -47,7 +47,6 @@ int     search1(void (**opt)(), char *str, va_list ap)
                 i++;
               else if (str[i + 1] == '%' && str[i + 2] == '%') {
                 my_putchar('%');
-
               }
               if (str[i + 1] == '\0')
                 return (0);
@@ -59,7 +58,7 @@ int     search1(void (**opt)(), char *str, va_list ap)
   return (0);
 }
 
-int main()
+int     main()
 {
   my_printf("1 - une chaine\n");
   my_printf("2 - %s \n", "une autre chaine");

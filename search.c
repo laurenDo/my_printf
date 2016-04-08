@@ -5,7 +5,7 @@
 ** Login   <lauren_d@etna-alternance.net>
 ** 
 ** Started on  Fri Apr  8 13:42:47 2016 LAURENCEAU Dorian
-** Last update Fri Apr  8 14:18:27 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 14:39:33 2016 LAURENCEAU Dorian
 */
 #include "my_printf.h"
  
@@ -13,7 +13,7 @@ int     search(char *str, int i)
 {
   char  *listOption;
   int   place;
- 
+
   place = 0;
   listOption = "sidcouxXb";
   i = i + 1;
@@ -62,19 +62,19 @@ void    my_put_nbr(int n)
   else
     {
       if (n < 0)
-  {
-    write(1, "-", 1);
-    n = -n;
-  }
+	{
+	  write(1, "-", 1);
+	  n = -n;
+	}
       i = n;
       while ((i /= 10) > 0)
-  size *= 10;
+	size *= 10;
       i = n;
       while (size)
-  {
-    my_putchar((i / size) + '0');
-    i %= size;
-    size /= 10;
-  }
+	{
+	  my_putchar((i / size) + '0');
+	  i %= size;
+	  size /= 10;
+	}
     }
 }

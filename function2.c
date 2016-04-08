@@ -5,7 +5,7 @@
 ** Login   <lauren_d@etna-alternance.net>
 ** 
 ** Started on  Fri Apr  8 13:43:24 2016 LAURENCEAU Dorian
-** Last update Fri Apr  8 14:17:26 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 14:37:53 2016 LAURENCEAU Dorian
 */
 #include "my_printf.h"
 
@@ -16,7 +16,7 @@ void    opt_u(unsigned int d)
   else
     my_put_nbr(d);
 }
- 
+
 void    opt_x(int d)
 {
   my_put_nbr_base(d, "0123456789abcdef");
