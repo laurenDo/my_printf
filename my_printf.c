@@ -5,7 +5,7 @@
 ** Login   <lauren_d@etna-alternance.net>
 ** 
 ** Started on  Fri Apr  8 13:42:19 2016 LAURENCEAU Dorian
-** Last update Fri Apr  8 16:57:44 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 17:00:18 2016 LAURENCEAU Dorian
 */
 #include "my_printf.h"
 
@@ -58,7 +58,7 @@ int     search1(void (**opt)(), char *str, va_list ap)
   return (0);
 }
 
-int main()
+int     main()
 {
   my_printf("1 - une chaine\n");
   my_printf("2 - %s \n", "une autre chaine");
