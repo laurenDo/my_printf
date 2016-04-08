@@ -15,17 +15,17 @@ SRC	=	my_printf.c \
 OBJ	=	$(SRC:%.c=%.o)
 RM	= rm -f
 CFLAGS += -fPIC -W -Wall -Werror -pedantic -Wextra
-LDFLAGS += -shared
-my_printf_dynamic = libmy_printf_`uname -m`-`uname -s`.so
+LDFLAGS += -shared -o
+MY_PRINTF_DYNAMIC = libmy_printf_`uname -m`-`uname -s`.so
+
+all: ${MY_PRINTF_DYNAMIC} my_printf_static
 
 my_printf_static: $(OBJ)
 					ar -q libmy_printf_`uname -m`-`uname -s`.a $(OBJ)
 					ranlib libmy_printf_`uname -m`-`uname -s`.a
 
-$(my_printf_dynamic):  $(OBJ)
-					$(CC) ${LDFLAGS} -o $@ $^
-
-all: ${my_printf_dynamic} my_printf_static
+$(MY_PRINTF_DYNAMIC):  $(OBJ)
+					$(CC) ${LDFLAGS} $(MY_PRINTF_DYNAMIC) $(OBJ)
 
 clean:
 	$(RM) $(OBJ)
