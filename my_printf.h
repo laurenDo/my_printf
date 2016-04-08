@@ -5,7 +5,7 @@
 ** Login   <lauren_d@etna-alternance.net>
 ** 
 ** Started on  Fri Apr  8 13:42:34 2016 LAURENCEAU Dorian
-** Last update Fri Apr  8 15:31:52 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 15:33:51 2016 LAURENCEAU Dorian
 */
 #ifndef __MY_PRINTF_H__
 #define __MY_PRINTF_H__
@@ -17,7 +17,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int    my_printf(char *str, ...);
+int     my_printf(char *str, ...);
 int     my_strlen(char *str);
 void	my_putchar(char c);
 void    my_putstr(char *str);
