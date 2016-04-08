@@ -5,7 +5,7 @@
 ** Login   <lauren_d@etna-alternance.net>
 ** 
 ** Started on  Fri Apr  8 13:42:19 2016 LAURENCEAU Dorian
-** Last update Fri Apr  8 16:54:22 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 16:57:44 2016 LAURENCEAU Dorian
 */
 #include "my_printf.h"
 
@@ -56,4 +56,17 @@ int     search1(void (**opt)(), char *str, va_list ap)
       i++;
     }
   return (0);
+}
+
+int main()
+{
+  my_printf("1 - une chaine\n");
+  my_printf("2 - %s \n", "une autre chaine");
+  my_printf("3 - %i \n", 42);
+  my_printf("4 - %s %d %s %c", "avec", 4, "parametres", '\n');
+  my_printf("1 - %o \n", 42);
+  my_printf("2 - %u \n", (unsigned int)4200000000);
+  my_printf("3 - %x \n", 42);
+  my_printf("4 - %X \n", 42);
+  my_printf("5 - %d%% \n", 42);
 }
