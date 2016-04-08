@@ -1,3 +1,12 @@
+/*
+** my_printf.h for my_printf in /Users/lauren_d/Documents/printf/printf
+** 
+** Made by LAURENCEAU Dorian
+** Login   <lauren_d@etna-alternance.net>
+** 
+** Started on  Fri Apr  8 13:42:34 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 13:42:36 2016 LAURENCEAU Dorian
+*/
 #ifndef __MY_PRINTF_H__
 #define __MY_PRINTF_H__
 

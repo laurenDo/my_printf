@@ -1,3 +1,12 @@
+/*
+** my_printf.c for my_printf in /Users/lauren_d/Documents/printf/printf
+** 
+** Made by LAURENCEAU Dorian
+** Login   <lauren_d@etna-alternance.net>
+** 
+** Started on  Fri Apr  8 13:42:19 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 13:42:22 2016 LAURENCEAU Dorian
+*/
 #include "my_printf.h"
 
 int    my_printf(char *str, ...)
