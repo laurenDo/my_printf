@@ -5,7 +5,7 @@
 ** Login   <lauren_d@etna-alternance.net>
 ** 
 ** Started on  Fri Apr  8 13:42:47 2016 LAURENCEAU Dorian
-** Last update Fri Apr  8 13:57:59 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 14:18:27 2016 LAURENCEAU Dorian
 */
 #include "my_printf.h"
  
@@ -15,7 +15,7 @@ int     search(char *str, int i)
   int   place;
  
   place = 0;
-  listOption = "sidcouxX";
+  listOption = "sidcouxXb";
   i = i + 1;
   while (listOption[place] != '\0')
     {

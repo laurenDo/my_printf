@@ -5,7 +5,7 @@
 ** Login   <lauren_d@etna-alternance.net>
 ** 
 ** Started on  Fri Apr  8 13:42:34 2016 LAURENCEAU Dorian
-** Last update Fri Apr  8 13:42:36 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 14:18:50 2016 LAURENCEAU Dorian
 */
 #ifndef __MY_PRINTF_H__
 #define __MY_PRINTF_H__
@@ -32,6 +32,6 @@ void    opt_o(int d);
 void    opt_u(unsigned int d);
 void    opt_x(int d);
 void    opt_X(int d);
-
+void    opt_b(int d);
 
 #endif

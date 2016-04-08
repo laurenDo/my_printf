@@ -5,7 +5,7 @@
 ** Login   <lauren_d@etna-alternance.net>
 ** 
 ** Started on  Fri Apr  8 13:42:19 2016 LAURENCEAU Dorian
-** Last update Fri Apr  8 14:13:23 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 14:19:56 2016 LAURENCEAU Dorian
 */
 #include "my_printf.h"
 
@@ -13,7 +13,7 @@ int    my_printf(char *str, ...)
 {
   va_list       ap;
   typedef void (*func_t)();
-  func_t opt[8];
+  func_t opt[9];
 
   opt[0] = &opt_s;
   opt[1] = &opt_i;
@@ -23,6 +23,7 @@ int    my_printf(char *str, ...)
   opt[5] = &opt_u;
   opt[6] = &opt_x;
   opt[7] = &opt_X;
+  opt[8] = &opt_b;
   va_start(ap, str);
   search1(opt, str, ap);
   va_end(ap);
@@ -69,5 +70,6 @@ int main()
   my_printf("3 - %x \n", 42);
   my_printf("4 - %X \n", 42);
   my_printf("5 - %d%% \n", 42);
+  my_printf("6 - %b \n", 255);
   return(0);
 }

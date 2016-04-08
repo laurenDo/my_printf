@@ -5,7 +5,7 @@
 ** Login   <lauren_d@etna-alternance.net>
 ** 
 ** Started on  Fri Apr  8 13:43:24 2016 LAURENCEAU Dorian
-** Last update Fri Apr  8 13:43:33 2016 LAURENCEAU Dorian
+** Last update Fri Apr  8 14:17:26 2016 LAURENCEAU Dorian
 */
 #include "my_printf.h"
 
@@ -25,6 +25,11 @@ void    opt_x(int d)
 void    opt_X(int d)
 {
   my_put_nbr_base(d, "0123456789ABCDEF");
+}
+
+void    opt_b(int d)
+{
+  my_put_nbr_base(d, "01");
 }
 
 void    my_put_nbr_base(int n, char *base)
