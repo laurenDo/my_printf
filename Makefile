@@ -23,6 +23,7 @@ all: ${MY_PRINTF_DYNAMIC} my_printf_static
 my_printf_static: $(OBJ)
 					ar -q libmy_printf_`uname -m`-`uname -s`.a $(OBJ)
 					ranlib libmy_printf_`uname -m`-`uname -s`.a
+					gcc *.o libmy_printf_`uname -m`-`uname -s`.a -o my_printf
 
 $(MY_PRINTF_DYNAMIC):  $(OBJ)
 					$(CC) ${LDFLAGS} $(MY_PRINTF_DYNAMIC) $(OBJ)
